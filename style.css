@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* height: 100vh; */
+    background-color: rgba(29, 173, 173, 0.199);
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.menu li {
+    height: 40px;
+    width: 12.5%;
+    margin: 0;
+    float: left;
+    font-size: 15px;
+    padding: 0;
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    background-color: #265687;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border: 1.5px solid #5d9fe2;
+    transition: 0.5s all ease-in-out;
+    padding: 0 30px;
+}
+#left-bottom {
+    border-bottom-left-radius: 12px;
+}
+#right-bottom {
+    border-bottom-right-radius: 12px;
+}
+.menu a:hover {
+    background: linear-gradient(#5e6bdf, #070ada);
+    color: rgba(219, 206, 206, 0.911);
+}
+
+/* @media (max-width: 575px) {
+    .menu li {
+        width: 100%;
+        float: none;
+    }
+} */
+
+.menu ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.countries {
+    display: block;
+    background-color: #5d9fe2;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    width: 160px;
+    border: 1.5px solid #081a2c;
+    border-bottom-left-radius: 12px;
+    transition: 0.5s all ease-in-out;
+    padding: 0 30px;
+}
+
+.countries:hover , .station:hover {
+    background: linear-gradient(#5e6bdf, #070ada);
+    color: rgba(219, 206, 206, 0.911);
+}
+
+.station {
+    display: block;
+    background-color: #434f97;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    width: 250px;
+    border: 1.5px solid #081a2c;
+    border-radius: 12px;
+    padding: 0 30px;
+}
+/* li {
+    position: relative;
+} */
+/* .menu li:focus-within > .menu-by-countries, */
+.menu li:hover > .menu-by-countries{
+    display: block;
+}
+.menu-by-countries {
+    display: none;
+    position:absolute;
+    top: 40px;
+    left: 0px;
+    padding: 0 5px 5px 5px;
+}
+
+.arge:hover > .radio-argentina {
+    display: block;
+}
+.radio-argentina {
+    position:absolute;
+    top: 0px;
+    left: 100%;
+    display: none;
+}
+.aus:hover .radio-australia{ 
+    display: block;
+}
+.radio-australia {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display: none;
+}
+.spain:hover .radio-spain {
+    display: block;
+}
+.radio-spain { 
+    position: absolute;
+    top: 250px;
+    left: 100%;
+    display: none;
+}
